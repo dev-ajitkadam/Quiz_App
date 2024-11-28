@@ -8,20 +8,24 @@ document.querySelectorAll(".btn-category").forEach((option) => {
     option.style.backgroundColor = "";
     option.addEventListener('click', () => {
 
-        
         document.querySelectorAll('.btn-category').forEach((btn)=>{
-            btn.disabled = true;
-            btn.style.backgroundColor = " ";
             
+            btn.style.backgroundColor = " ";
+            btn.disabled = false;
+            btn.style.color = "#FFFFFF"
         })
+
+        document.querySelectorAll('.btn-category').forEach((btn) => {
+            if (btn !== option) {
+                btn.disabled = true;
+            }
+        });
         
         option.style.backgroundColor = "#0ad0f4";
         Category = option.innerHTML.trim();
         
     })
 });
-
-console.log(Username, Category);
 
 
 // Enter button logic
