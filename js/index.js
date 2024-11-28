@@ -8,9 +8,11 @@ document.querySelectorAll(".btn-category").forEach((option) => {
     option.style.backgroundColor = "";
     option.addEventListener('click', () => {
 
+        
         document.querySelectorAll('.btn-category').forEach((btn)=>{
             btn.disabled = true;
-            btn.style.backgroundColor = " ";
+            btn.style.backgroundColor = "#0ad0f4";
+            
         })
         
         option.style.backgroundColor = "#0ad0f4";
