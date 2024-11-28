@@ -11,7 +11,7 @@ document.querySelectorAll(".btn-category").forEach((option) => {
         
         document.querySelectorAll('.btn-category').forEach((btn)=>{
             btn.disabled = true;
-            btn.style.backgroundColor = "#0ad0f4";
+            btn.style.backgroundColor = " ";
             
         })
         
